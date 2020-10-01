@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<PMML version="4.3" xmlns="http://www.dmg.org/PMML-4_3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dmg.org/PMML-4_3 pmml-4-3.xsd">
+  <Header copyright="Copyright(c) IBM Corp. 1989-2017. All rights reserved.">
+    <Application name="IBM SPSS Modeler Common" version="18.2.1.0"/>
+    <Timestamp/>
+</Header>
+  <DataDictionary numberOfFields="2">
+    <DataField dataType="double" displayName="Wzrost" isCyclic="0" name="Wzrost" optype="continuous"/>
+    <DataField dataType="double" displayName="Waga" isCyclic="0" name="Waga" optype="continuous"/>
+</DataDictionary>
+  <TreeModel algorithmName="C&amp;RT" functionName="regression">
+    <Extension extender="spss.com">
+      <X-risk value="38.3849418523558"/>
+      <X-seOfRisk value="1.7908851781528"/>
+</Extension>
+    <MiningSchema>
+      <MiningField importance="1" name="Wzrost" usageType="active"/>
+      <MiningField name="Waga" usageType="predicted"/>
+</MiningSchema>
+    <Output>
+      <OutputField dataType="double" feature="predictedValue" name="$R-Waga"/>
+      <OutputField dataType="integer" feature="entityId" name="$RI-Waga"/>
+</Output>
+    <ModelStats>
+      <UnivariateStats field="Wzrost">
+        <Counts invalidFreq="0" missingFreq="0" totalFreq="1233"/>
+        <NumericInfo maximum="200" minimum="150"/>
+</UnivariateStats>
+</ModelStats>
+    <Node defaultChild="1" id="0" recordCount="1233" score="61.5150040551501">
+      <Extension>
+        <X-Node>
+          <X-RegInfo mean="61.5150040551501" stdDev="11.6329822624713"/>
+          <X-NodeStats improvement="76.8796884031903"/>
+</X-Node>
+</Extension>
+      <True/>
+      <ScoreDistribution recordCount="42" value="0"/>
+      <ScoreDistribution recordCount="126" value="1"/>
+      <ScoreDistribution recordCount="222" value="2"/>
+      <ScoreDistribution recordCount="196" value="3"/>
+      <ScoreDistribution recordCount="159" value="4"/>
+      <ScoreDistribution recordCount="197" value="5"/>
+      <ScoreDistribution recordCount="111" value="6"/>
+      <ScoreDistribution recordCount="112" value="7"/>
+      <ScoreDistribution recordCount="45" value="8"/>
+      <ScoreDistribution recordCount="23" value="9"/>
+      <Node defaultChild="3" id="1" recordCount="718" score="54.0891364902507">
+        <Extension>
+          <X-Node>
+            <X-RegInfo mean="54.0891364902507" stdDev="7.26968977951669"/>
+            <X-NodeStats improvement="11.335062605553"/>
+</X-Node>
+</Extension>
+        <CompoundPredicate booleanOperator="surrogate">
+          <CompoundPredicate booleanOperator="and">
+            <True/>
+            <SimplePredicate field="Wzrost" operator="lessOrEqual" value="178.5"/>
+</CompoundPredicate>
+          <True/>
+</CompoundPredicate>
+        <ScoreDistribution recordCount="42" value="0"/>
+        <ScoreDistribution recordCount="126" value="1"/>
+        <ScoreDistribution recordCount="222" value="2"/>
+        <ScoreDistribution recordCount="161" value="3"/>
+        <ScoreDistribution recordCount="89" value="4"/>
+        <ScoreDistribution recordCount="71" value="5"/>
+        <ScoreDistribution recordCount="7" value="6"/>
+        <ScoreDistribution recordCount="0" value="7"/>
+        <ScoreDistribution recordCount="0" value="8"/>
+        <ScoreDistribution recordCount="0" value="9"/>
+        <Node defaultChild="7" id="3" recordCount="386" score="49.9974093264249">
+          <Extension>
+            <X-Node>
+              <X-RegInfo mean="49.9974093264249" stdDev="5.34498123848976"/>
+              <X-NodeStats improvement="1.50026980993469"/>
+</X-Node>
+</Extension>
+          <CompoundPredicate booleanOperator="surrogate">
+            <CompoundPredicate booleanOperator="and">
+              <True/>
+              <SimplePredicate field="Wzrost" operator="lessOrEqual" value="165.5"/>
+</CompoundPredicate>
+            <True/>
+</CompoundPredicate>
+          <ScoreDistribution recordCount="42" value="0"/>
+          <ScoreDistribution recordCount="118" value="1"/>
+          <ScoreDistribution recordCount="137" value="2"/>
+          <ScoreDistribution recordCount="75" value="3"/>
+          <ScoreDistribution recordCount="14" value="4"/>
+          <ScoreDistribution recordCount="0" value="5"/>
+          <ScoreDistribution recordCount="0" value="6"/>
+          <ScoreDistribution recordCount="0" value="7"/>
+          <ScoreDistribution recordCount="0" value="8"/>
+          <ScoreDistribution recordCount="0" value="9"/>
+          <Node defaultChild="16" id="7" recordCount="194" score="47.819587628866">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="47.819587628866" stdDev="4.75224820916431"/>
+                <X-NodeStats improvement="0.154984634145739"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <True/>
+                <SimplePredicate field="Wzrost" operator="lessOrEqual" value="157.5"/>
+</CompoundPredicate>
+              <True/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="40" value="0"/>
+            <ScoreDistribution recordCount="65" value="1"/>
+            <ScoreDistribution recordCount="73" value="2"/>
+            <ScoreDistribution recordCount="16" value="3"/>
+            <ScoreDistribution recordCount="0" value="4"/>
+            <ScoreDistribution recordCount="0" value="5"/>
+            <ScoreDistribution recordCount="0" value="6"/>
+            <ScoreDistribution recordCount="0" value="7"/>
+            <ScoreDistribution recordCount="0" value="8"/>
+            <ScoreDistribution recordCount="0" value="9"/>
+            <Node defaultChild="31" id="15" recordCount="89" score="46.7415730337079">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="46.7415730337079" stdDev="4.51897034201294"/>
+                  <X-NodeStats improvement="0.0254543261186435"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <True/>
+                  <SimplePredicate field="Wzrost" operator="lessOrEqual" value="153.5"/>
+</CompoundPredicate>
+                <False/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="19" value="0"/>
+              <ScoreDistribution recordCount="34" value="1"/>
+              <ScoreDistribution recordCount="35" value="2"/>
+              <ScoreDistribution recordCount="1" value="3"/>
+              <ScoreDistribution recordCount="0" value="4"/>
+              <ScoreDistribution recordCount="0" value="5"/>
+              <ScoreDistribution recordCount="0" value="6"/>
+              <ScoreDistribution recordCount="0" value="7"/>
+              <ScoreDistribution recordCount="0" value="8"/>
+              <ScoreDistribution recordCount="0" value="9"/>
+              <Node id="31" recordCount="56" score="46.2857142857143">
+                <Extension>
+                  <X-Node>
+                    <X-RegInfo mean="46.2857142857143" stdDev="4.10637768140478"/>
+</X-Node>
+</Extension>
+                <CompoundPredicate booleanOperator="surrogate">
+                  <CompoundPredicate booleanOperator="and">
+                    <True/>
+                    <SimplePredicate field="Wzrost" operator="lessOrEqual" value="152.5"/>
+</CompoundPredicate>
+                  <True/>
+</CompoundPredicate>
+                <ScoreDistribution recordCount="13" value="0"/>
+                <ScoreDistribution recordCount="23" value="1"/>
+                <ScoreDistribution recordCount="20" value="2"/>
+                <ScoreDistribution recordCount="0" value="3"/>
+                <ScoreDistribution recordCount="0" value="4"/>
+                <ScoreDistribution recordCount="0" value="5"/>
+                <ScoreDistribution recordCount="0" value="6"/>
+                <ScoreDistribution recordCount="0" value="7"/>
+                <ScoreDistribution recordCount="0" value="8"/>
+                <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+              <Node id="32" recordCount="33" score="47.5151515151515">
+                <Extension>
+                  <X-Node>
+                    <X-RegInfo mean="47.5151515151515" stdDev="5.11811251904195"/>
+</X-Node>
+</Extension>
+                <CompoundPredicate booleanOperator="surrogate">
+                  <CompoundPredicate booleanOperator="and">
+                    <SimplePredicate field="Wzrost" operator="greaterThan" value="152.5"/>
+                    <True/>
+</CompoundPredicate>
+                  <False/>
+</CompoundPredicate>
+                <ScoreDistribution recordCount="6" value="0"/>
+                <ScoreDistribution recordCount="11" value="1"/>
+                <ScoreDistribution recordCount="15" value="2"/>
+                <ScoreDistribution recordCount="1" value="3"/>
+                <ScoreDistribution recordCount="0" value="4"/>
+                <ScoreDistribution recordCount="0" value="5"/>
+                <ScoreDistribution recordCount="0" value="6"/>
+                <ScoreDistribution recordCount="0" value="7"/>
+                <ScoreDistribution recordCount="0" value="8"/>
+                <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+</Node>
+            <Node id="16" recordCount="105" score="48.7333333333334">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="48.7333333333334" stdDev="4.77426326710083"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <SimplePredicate field="Wzrost" operator="greaterThan" value="153.5"/>
+                  <True/>
+</CompoundPredicate>
+                <True/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="21" value="0"/>
+              <ScoreDistribution recordCount="31" value="1"/>
+              <ScoreDistribution recordCount="38" value="2"/>
+              <ScoreDistribution recordCount="15" value="3"/>
+              <ScoreDistribution recordCount="0" value="4"/>
+              <ScoreDistribution recordCount="0" value="5"/>
+              <ScoreDistribution recordCount="0" value="6"/>
+              <ScoreDistribution recordCount="0" value="7"/>
+              <ScoreDistribution recordCount="0" value="8"/>
+              <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+</Node>
+          <Node defaultChild="18" id="8" recordCount="192" score="52.1979166666667">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="52.1979166666667" stdDev="5.00809771843726"/>
+                <X-NodeStats improvement="0.215019107025011"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <SimplePredicate field="Wzrost" operator="greaterThan" value="157.5"/>
+                <True/>
+</CompoundPredicate>
+              <False/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="2" value="0"/>
+            <ScoreDistribution recordCount="53" value="1"/>
+            <ScoreDistribution recordCount="64" value="2"/>
+            <ScoreDistribution recordCount="59" value="3"/>
+            <ScoreDistribution recordCount="14" value="4"/>
+            <ScoreDistribution recordCount="0" value="5"/>
+            <ScoreDistribution recordCount="0" value="6"/>
+            <ScoreDistribution recordCount="0" value="7"/>
+            <ScoreDistribution recordCount="0" value="8"/>
+            <ScoreDistribution recordCount="0" value="9"/>
+            <Node id="17" recordCount="95" score="51.0105263157895">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="51.0105263157895" stdDev="4.66196638459656"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <True/>
+                  <SimplePredicate field="Wzrost" operator="lessOrEqual" value="161.5"/>
+</CompoundPredicate>
+                <False/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="2" value="0"/>
+              <ScoreDistribution recordCount="33" value="1"/>
+              <ScoreDistribution recordCount="33" value="2"/>
+              <ScoreDistribution recordCount="24" value="3"/>
+              <ScoreDistribution recordCount="3" value="4"/>
+              <ScoreDistribution recordCount="0" value="5"/>
+              <ScoreDistribution recordCount="0" value="6"/>
+              <ScoreDistribution recordCount="0" value="7"/>
+              <ScoreDistribution recordCount="0" value="8"/>
+              <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+            <Node defaultChild="37" id="18" recordCount="97" score="53.360824742268">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="53.360824742268" stdDev="5.08507941393715"/>
+                  <X-NodeStats improvement="0.00375073410168644"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <SimplePredicate field="Wzrost" operator="greaterThan" value="161.5"/>
+                  <True/>
+</CompoundPredicate>
+                <True/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="0" value="0"/>
+              <ScoreDistribution recordCount="20" value="1"/>
+              <ScoreDistribution recordCount="31" value="2"/>
+              <ScoreDistribution recordCount="35" value="3"/>
+              <ScoreDistribution recordCount="11" value="4"/>
+              <ScoreDistribution recordCount="0" value="5"/>
+              <ScoreDistribution recordCount="0" value="6"/>
+              <ScoreDistribution recordCount="0" value="7"/>
+              <ScoreDistribution recordCount="0" value="8"/>
+              <ScoreDistribution recordCount="0" value="9"/>
+              <Node id="37" recordCount="71" score="53.4929577464789">
+                <Extension>
+                  <X-Node>
+                    <X-RegInfo mean="53.4929577464789" stdDev="5.20404578720549"/>
+</X-Node>
+</Extension>
+                <CompoundPredicate booleanOperator="surrogate">
+                  <CompoundPredicate booleanOperator="and">
+                    <True/>
+                    <SimplePredicate field="Wzrost" operator="lessOrEqual" value="164.5"/>
+</CompoundPredicate>
+                  <True/>
+</CompoundPredicate>
+                <ScoreDistribution recordCount="0" value="0"/>
+                <ScoreDistribution recordCount="15" value="1"/>
+                <ScoreDistribution recordCount="21" value="2"/>
+                <ScoreDistribution recordCount="26" value="3"/>
+                <ScoreDistribution recordCount="9" value="4"/>
+                <ScoreDistribution recordCount="0" value="5"/>
+                <ScoreDistribution recordCount="0" value="6"/>
+                <ScoreDistribution recordCount="0" value="7"/>
+                <ScoreDistribution recordCount="0" value="8"/>
+                <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+              <Node id="38" recordCount="26" score="53">
+                <Extension>
+                  <X-Node>
+                    <X-RegInfo mean="53" stdDev="4.82493523272596"/>
+</X-Node>
+</Extension>
+                <CompoundPredicate booleanOperator="surrogate">
+                  <CompoundPredicate booleanOperator="and">
+                    <SimplePredicate field="Wzrost" operator="greaterThan" value="164.5"/>
+                    <True/>
+</CompoundPredicate>
+                  <False/>
+</CompoundPredicate>
+                <ScoreDistribution recordCount="0" value="0"/>
+                <ScoreDistribution recordCount="5" value="1"/>
+                <ScoreDistribution recordCount="10" value="2"/>
+                <ScoreDistribution recordCount="9" value="3"/>
+                <ScoreDistribution recordCount="2" value="4"/>
+                <ScoreDistribution recordCount="0" value="5"/>
+                <ScoreDistribution recordCount="0" value="6"/>
+                <ScoreDistribution recordCount="0" value="7"/>
+                <ScoreDistribution recordCount="0" value="8"/>
+                <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+</Node>
+</Node>
+</Node>
+        <Node defaultChild="9" id="4" recordCount="332" score="58.8463855421687">
+          <Extension>
+            <X-Node>
+              <X-RegInfo mean="58.8463855421687" stdDev="6.24697284095909"/>
+              <X-NodeStats improvement="1.27820881639343"/>
+</X-Node>
+</Extension>
+          <CompoundPredicate booleanOperator="surrogate">
+            <CompoundPredicate booleanOperator="and">
+              <SimplePredicate field="Wzrost" operator="greaterThan" value="165.5"/>
+              <True/>
+</CompoundPredicate>
+            <False/>
+</CompoundPredicate>
+          <ScoreDistribution recordCount="0" value="0"/>
+          <ScoreDistribution recordCount="8" value="1"/>
+          <ScoreDistribution recordCount="85" value="2"/>
+          <ScoreDistribution recordCount="86" value="3"/>
+          <ScoreDistribution recordCount="75" value="4"/>
+          <ScoreDistribution recordCount="71" value="5"/>
+          <ScoreDistribution recordCount="7" value="6"/>
+          <ScoreDistribution recordCount="0" value="7"/>
+          <ScoreDistribution recordCount="0" value="8"/>
+          <ScoreDistribution recordCount="0" value="9"/>
+          <Node defaultChild="19" id="9" recordCount="210" score="57.1857142857143">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="57.1857142857143" stdDev="5.79463418798116"/>
+                <X-NodeStats improvement="0.161037607293163"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <True/>
+                <SimplePredicate field="Wzrost" operator="lessOrEqual" value="173.5"/>
+</CompoundPredicate>
+              <True/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="0" value="0"/>
+            <ScoreDistribution recordCount="8" value="1"/>
+            <ScoreDistribution recordCount="70" value="2"/>
+            <ScoreDistribution recordCount="53" value="3"/>
+            <ScoreDistribution recordCount="46" value="4"/>
+            <ScoreDistribution recordCount="33" value="5"/>
+            <ScoreDistribution recordCount="0" value="6"/>
+            <ScoreDistribution recordCount="0" value="7"/>
+            <ScoreDistribution recordCount="0" value="8"/>
+            <ScoreDistribution recordCount="0" value="9"/>
+            <Node defaultChild="40" id="19" recordCount="164" score="56.6707317073171">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="56.6707317073171" stdDev="5.47958817593842"/>
+                  <X-NodeStats improvement="0.0733132763754089"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <True/>
+                  <SimplePredicate field="Wzrost" operator="lessOrEqual" value="171.5"/>
+</CompoundPredicate>
+                <True/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="0" value="0"/>
+              <ScoreDistribution recordCount="8" value="1"/>
+              <ScoreDistribution recordCount="55" value="2"/>
+              <ScoreDistribution recordCount="45" value="3"/>
+              <ScoreDistribution recordCount="38" value="4"/>
+              <ScoreDistribution recordCount="18" value="5"/>
+              <ScoreDistribution recordCount="0" value="6"/>
+              <ScoreDistribution recordCount="0" value="7"/>
+              <ScoreDistribution recordCount="0" value="8"/>
+              <ScoreDistribution recordCount="0" value="9"/>
+              <Node id="39" recordCount="54" score="55.6111111111111">
+                <Extension>
+                  <X-Node>
+                    <X-RegInfo mean="55.6111111111111" stdDev="5.16671738664507"/>
+</X-Node>
+</Extension>
+                <CompoundPredicate booleanOperator="surrogate">
+                  <CompoundPredicate booleanOperator="and">
+                    <True/>
+                    <SimplePredicate field="Wzrost" operator="lessOrEqual" value="167.5"/>
+</CompoundPredicate>
+                  <False/>
+</CompoundPredicate>
+                <ScoreDistribution recordCount="0" value="0"/>
+                <ScoreDistribution recordCount="5" value="1"/>
+                <ScoreDistribution recordCount="17" value="2"/>
+                <ScoreDistribution recordCount="16" value="3"/>
+                <ScoreDistribution recordCount="15" value="4"/>
+                <ScoreDistribution recordCount="1" value="5"/>
+                <ScoreDistribution recordCount="0" value="6"/>
+                <ScoreDistribution recordCount="0" value="7"/>
+                <ScoreDistribution recordCount="0" value="8"/>
+                <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+              <Node id="40" recordCount="110" score="57.1909090909091">
+                <Extension>
+                  <X-Node>
+                    <X-RegInfo mean="57.1909090909091" stdDev="5.57598957284071"/>
+</X-Node>
+</Extension>
+                <CompoundPredicate booleanOperator="surrogate">
+                  <CompoundPredicate booleanOperator="and">
+                    <SimplePredicate field="Wzrost" operator="greaterThan" value="167.5"/>
+                    <True/>
+</CompoundPredicate>
+                  <True/>
+</CompoundPredicate>
+                <ScoreDistribution recordCount="0" value="0"/>
+                <ScoreDistribution recordCount="3" value="1"/>
+                <ScoreDistribution recordCount="38" value="2"/>
+                <ScoreDistribution recordCount="29" value="3"/>
+                <ScoreDistribution recordCount="23" value="4"/>
+                <ScoreDistribution recordCount="17" value="5"/>
+                <ScoreDistribution recordCount="0" value="6"/>
+                <ScoreDistribution recordCount="0" value="7"/>
+                <ScoreDistribution recordCount="0" value="8"/>
+                <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+</Node>
+            <Node id="20" recordCount="46" score="59.0217391304348">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="59.0217391304348" stdDev="6.5404353590561"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <SimplePredicate field="Wzrost" operator="greaterThan" value="171.5"/>
+                  <True/>
+</CompoundPredicate>
+                <False/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="0" value="0"/>
+              <ScoreDistribution recordCount="0" value="1"/>
+              <ScoreDistribution recordCount="15" value="2"/>
+              <ScoreDistribution recordCount="8" value="3"/>
+              <ScoreDistribution recordCount="8" value="4"/>
+              <ScoreDistribution recordCount="15" value="5"/>
+              <ScoreDistribution recordCount="0" value="6"/>
+              <ScoreDistribution recordCount="0" value="7"/>
+              <ScoreDistribution recordCount="0" value="8"/>
+              <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+</Node>
+          <Node defaultChild="22" id="10" recordCount="122" score="61.7049180327869">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="61.7049180327869" stdDev="5.97749017867864"/>
+                <X-NodeStats improvement="0.073045825092757"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <SimplePredicate field="Wzrost" operator="greaterThan" value="173.5"/>
+                <True/>
+</CompoundPredicate>
+              <False/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="0" value="0"/>
+            <ScoreDistribution recordCount="0" value="1"/>
+            <ScoreDistribution recordCount="15" value="2"/>
+            <ScoreDistribution recordCount="33" value="3"/>
+            <ScoreDistribution recordCount="29" value="4"/>
+            <ScoreDistribution recordCount="38" value="5"/>
+            <ScoreDistribution recordCount="7" value="6"/>
+            <ScoreDistribution recordCount="0" value="7"/>
+            <ScoreDistribution recordCount="0" value="8"/>
+            <ScoreDistribution recordCount="0" value="9"/>
+            <Node id="21" recordCount="54" score="60.7407407407407">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="60.7407407407407" stdDev="5.93736230485076"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <True/>
+                  <SimplePredicate field="Wzrost" operator="lessOrEqual" value="175.5"/>
+</CompoundPredicate>
+                <False/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="0" value="0"/>
+              <ScoreDistribution recordCount="0" value="1"/>
+              <ScoreDistribution recordCount="9" value="2"/>
+              <ScoreDistribution recordCount="18" value="3"/>
+              <ScoreDistribution recordCount="10" value="4"/>
+              <ScoreDistribution recordCount="16" value="5"/>
+              <ScoreDistribution recordCount="1" value="6"/>
+              <ScoreDistribution recordCount="0" value="7"/>
+              <ScoreDistribution recordCount="0" value="8"/>
+              <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+            <Node defaultChild="46" id="22" recordCount="68" score="62.4705882352941">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="62.4705882352941" stdDev="5.94118081693884"/>
+                  <X-NodeStats improvement="0.0100453492615288"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <SimplePredicate field="Wzrost" operator="greaterThan" value="175.5"/>
+                  <True/>
+</CompoundPredicate>
+                <True/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="0" value="0"/>
+              <ScoreDistribution recordCount="0" value="1"/>
+              <ScoreDistribution recordCount="6" value="2"/>
+              <ScoreDistribution recordCount="15" value="3"/>
+              <ScoreDistribution recordCount="19" value="4"/>
+              <ScoreDistribution recordCount="22" value="5"/>
+              <ScoreDistribution recordCount="6" value="6"/>
+              <ScoreDistribution recordCount="0" value="7"/>
+              <ScoreDistribution recordCount="0" value="8"/>
+              <ScoreDistribution recordCount="0" value="9"/>
+              <Node id="45" recordCount="29" score="62.9655172413793">
+                <Extension>
+                  <X-Node>
+                    <X-RegInfo mean="62.9655172413793" stdDev="5.60282300414406"/>
+</X-Node>
+</Extension>
+                <CompoundPredicate booleanOperator="surrogate">
+                  <CompoundPredicate booleanOperator="and">
+                    <True/>
+                    <SimplePredicate field="Wzrost" operator="lessOrEqual" value="176.5"/>
+</CompoundPredicate>
+                  <False/>
+</CompoundPredicate>
+                <ScoreDistribution recordCount="0" value="0"/>
+                <ScoreDistribution recordCount="0" value="1"/>
+                <ScoreDistribution recordCount="3" value="2"/>
+                <ScoreDistribution recordCount="4" value="3"/>
+                <ScoreDistribution recordCount="7" value="4"/>
+                <ScoreDistribution recordCount="14" value="5"/>
+                <ScoreDistribution recordCount="1" value="6"/>
+                <ScoreDistribution recordCount="0" value="7"/>
+                <ScoreDistribution recordCount="0" value="8"/>
+                <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+              <Node id="46" recordCount="39" score="62.1025641025641">
+                <Extension>
+                  <X-Node>
+                    <X-RegInfo mean="62.1025641025641" stdDev="6.22725280223047"/>
+</X-Node>
+</Extension>
+                <CompoundPredicate booleanOperator="surrogate">
+                  <CompoundPredicate booleanOperator="and">
+                    <SimplePredicate field="Wzrost" operator="greaterThan" value="176.5"/>
+                    <True/>
+</CompoundPredicate>
+                  <True/>
+</CompoundPredicate>
+                <ScoreDistribution recordCount="0" value="0"/>
+                <ScoreDistribution recordCount="0" value="1"/>
+                <ScoreDistribution recordCount="3" value="2"/>
+                <ScoreDistribution recordCount="11" value="3"/>
+                <ScoreDistribution recordCount="12" value="4"/>
+                <ScoreDistribution recordCount="8" value="5"/>
+                <ScoreDistribution recordCount="5" value="6"/>
+                <ScoreDistribution recordCount="0" value="7"/>
+                <ScoreDistribution recordCount="0" value="8"/>
+                <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+</Node>
+</Node>
+</Node>
+</Node>
+      <Node defaultChild="5" id="2" recordCount="515" score="71.8679611650484">
+        <Extension>
+          <X-Node>
+            <X-RegInfo mean="71.8679611650484" stdDev="8.13756019411911"/>
+            <X-NodeStats improvement="7.13794399770025"/>
+</X-Node>
+</Extension>
+        <CompoundPredicate booleanOperator="surrogate">
+          <CompoundPredicate booleanOperator="and">
+            <SimplePredicate field="Wzrost" operator="greaterThan" value="178.5"/>
+            <True/>
+</CompoundPredicate>
+          <False/>
+</CompoundPredicate>
+        <ScoreDistribution recordCount="0" value="0"/>
+        <ScoreDistribution recordCount="0" value="1"/>
+        <ScoreDistribution recordCount="0" value="2"/>
+        <ScoreDistribution recordCount="35" value="3"/>
+        <ScoreDistribution recordCount="70" value="4"/>
+        <ScoreDistribution recordCount="126" value="5"/>
+        <ScoreDistribution recordCount="104" value="6"/>
+        <ScoreDistribution recordCount="112" value="7"/>
+        <ScoreDistribution recordCount="45" value="8"/>
+        <ScoreDistribution recordCount="23" value="9"/>
+        <Node defaultChild="12" id="5" recordCount="321" score="68.6542056074765">
+          <Extension>
+            <X-Node>
+              <X-RegInfo mean="68.6542056074765" stdDev="6.96253743760939"/>
+              <X-NodeStats improvement="1.28934374207124"/>
+</X-Node>
+</Extension>
+          <CompoundPredicate booleanOperator="surrogate">
+            <CompoundPredicate booleanOperator="and">
+              <True/>
+              <SimplePredicate field="Wzrost" operator="lessOrEqual" value="191.5"/>
+</CompoundPredicate>
+            <True/>
+</CompoundPredicate>
+          <ScoreDistribution recordCount="0" value="0"/>
+          <ScoreDistribution recordCount="0" value="1"/>
+          <ScoreDistribution recordCount="0" value="2"/>
+          <ScoreDistribution recordCount="35" value="3"/>
+          <ScoreDistribution recordCount="63" value="4"/>
+          <ScoreDistribution recordCount="94" value="5"/>
+          <ScoreDistribution recordCount="64" value="6"/>
+          <ScoreDistribution recordCount="57" value="7"/>
+          <ScoreDistribution recordCount="8" value="8"/>
+          <ScoreDistribution recordCount="0" value="9"/>
+          <Node defaultChild="24" id="11" recordCount="90" score="65.0888888888889">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="65.0888888888889" stdDev="6.05711475877757"/>
+                <X-NodeStats improvement="0.0194935568171567"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <True/>
+                <SimplePredicate field="Wzrost" operator="lessOrEqual" value="182.5"/>
+</CompoundPredicate>
+              <False/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="0" value="0"/>
+            <ScoreDistribution recordCount="0" value="1"/>
+            <ScoreDistribution recordCount="0" value="2"/>
+            <ScoreDistribution recordCount="24" value="3"/>
+            <ScoreDistribution recordCount="16" value="4"/>
+            <ScoreDistribution recordCount="29" value="5"/>
+            <ScoreDistribution recordCount="19" value="6"/>
+            <ScoreDistribution recordCount="2" value="7"/>
+            <ScoreDistribution recordCount="0" value="8"/>
+            <ScoreDistribution recordCount="0" value="9"/>
+            <Node id="23" recordCount="15" score="63.9333333333334">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="63.9333333333334" stdDev="5.20256347070016"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <True/>
+                  <SimplePredicate field="Wzrost" operator="lessOrEqual" value="179.5"/>
+</CompoundPredicate>
+                <False/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="0" value="0"/>
+              <ScoreDistribution recordCount="0" value="1"/>
+              <ScoreDistribution recordCount="0" value="2"/>
+              <ScoreDistribution recordCount="4" value="3"/>
+              <ScoreDistribution recordCount="4" value="4"/>
+              <ScoreDistribution recordCount="5" value="5"/>
+              <ScoreDistribution recordCount="2" value="6"/>
+              <ScoreDistribution recordCount="0" value="7"/>
+              <ScoreDistribution recordCount="0" value="8"/>
+              <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+            <Node id="24" recordCount="75" score="65.32">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="65.32" stdDev="6.21932472218671"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <SimplePredicate field="Wzrost" operator="greaterThan" value="179.5"/>
+                  <True/>
+</CompoundPredicate>
+                <True/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="0" value="0"/>
+              <ScoreDistribution recordCount="0" value="1"/>
+              <ScoreDistribution recordCount="0" value="2"/>
+              <ScoreDistribution recordCount="20" value="3"/>
+              <ScoreDistribution recordCount="12" value="4"/>
+              <ScoreDistribution recordCount="24" value="5"/>
+              <ScoreDistribution recordCount="17" value="6"/>
+              <ScoreDistribution recordCount="2" value="7"/>
+              <ScoreDistribution recordCount="0" value="8"/>
+              <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+</Node>
+          <Node defaultChild="26" id="12" recordCount="231" score="70.04329004329">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="70.04329004329" stdDev="6.80714685158086"/>
+                <X-NodeStats improvement="0.250879786159594"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <SimplePredicate field="Wzrost" operator="greaterThan" value="182.5"/>
+                <True/>
+</CompoundPredicate>
+              <True/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="0" value="0"/>
+            <ScoreDistribution recordCount="0" value="1"/>
+            <ScoreDistribution recordCount="0" value="2"/>
+            <ScoreDistribution recordCount="11" value="3"/>
+            <ScoreDistribution recordCount="47" value="4"/>
+            <ScoreDistribution recordCount="65" value="5"/>
+            <ScoreDistribution recordCount="45" value="6"/>
+            <ScoreDistribution recordCount="55" value="7"/>
+            <ScoreDistribution recordCount="8" value="8"/>
+            <ScoreDistribution recordCount="0" value="9"/>
+            <Node id="25" recordCount="99" score="68.7070707070707">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="68.7070707070707" stdDev="6.25031023761073"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <True/>
+                  <SimplePredicate field="Wzrost" operator="lessOrEqual" value="186.5"/>
+</CompoundPredicate>
+                <False/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="0" value="0"/>
+              <ScoreDistribution recordCount="0" value="1"/>
+              <ScoreDistribution recordCount="0" value="2"/>
+              <ScoreDistribution recordCount="9" value="3"/>
+              <ScoreDistribution recordCount="18" value="4"/>
+              <ScoreDistribution recordCount="30" value="5"/>
+              <ScoreDistribution recordCount="24" value="6"/>
+              <ScoreDistribution recordCount="18" value="7"/>
+              <ScoreDistribution recordCount="0" value="8"/>
+              <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+            <Node id="26" recordCount="132" score="71.0454545454546">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="71.0454545454546" stdDev="7.05470839077217"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <SimplePredicate field="Wzrost" operator="greaterThan" value="186.5"/>
+                  <True/>
+</CompoundPredicate>
+                <True/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="0" value="0"/>
+              <ScoreDistribution recordCount="0" value="1"/>
+              <ScoreDistribution recordCount="0" value="2"/>
+              <ScoreDistribution recordCount="2" value="3"/>
+              <ScoreDistribution recordCount="29" value="4"/>
+              <ScoreDistribution recordCount="35" value="5"/>
+              <ScoreDistribution recordCount="21" value="6"/>
+              <ScoreDistribution recordCount="37" value="7"/>
+              <ScoreDistribution recordCount="8" value="8"/>
+              <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+</Node>
+</Node>
+        <Node defaultChild="14" id="6" recordCount="194" score="77.1855670103093">
+          <Extension>
+            <X-Node>
+              <X-RegInfo mean="77.1855670103093" stdDev="7.09787955916497"/>
+              <X-NodeStats improvement="0.121530354436262"/>
+</X-Node>
+</Extension>
+          <CompoundPredicate booleanOperator="surrogate">
+            <CompoundPredicate booleanOperator="and">
+              <SimplePredicate field="Wzrost" operator="greaterThan" value="191.5"/>
+              <True/>
+</CompoundPredicate>
+            <False/>
+</CompoundPredicate>
+          <ScoreDistribution recordCount="0" value="0"/>
+          <ScoreDistribution recordCount="0" value="1"/>
+          <ScoreDistribution recordCount="0" value="2"/>
+          <ScoreDistribution recordCount="0" value="3"/>
+          <ScoreDistribution recordCount="7" value="4"/>
+          <ScoreDistribution recordCount="32" value="5"/>
+          <ScoreDistribution recordCount="40" value="6"/>
+          <ScoreDistribution recordCount="55" value="7"/>
+          <ScoreDistribution recordCount="37" value="8"/>
+          <ScoreDistribution recordCount="23" value="9"/>
+          <Node id="13" recordCount="41" score="75.4878048780488">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="75.4878048780488" stdDev="5.92081899410656"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <True/>
+                <SimplePredicate field="Wzrost" operator="lessOrEqual" value="193.5"/>
+</CompoundPredicate>
+              <False/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="0" value="0"/>
+            <ScoreDistribution recordCount="0" value="1"/>
+            <ScoreDistribution recordCount="0" value="2"/>
+            <ScoreDistribution recordCount="0" value="3"/>
+            <ScoreDistribution recordCount="3" value="4"/>
+            <ScoreDistribution recordCount="6" value="5"/>
+            <ScoreDistribution recordCount="12" value="6"/>
+            <ScoreDistribution recordCount="11" value="7"/>
+            <ScoreDistribution recordCount="9" value="8"/>
+            <ScoreDistribution recordCount="0" value="9"/>
+</Node>
+          <Node defaultChild="30" id="14" recordCount="153" score="77.640522875817">
+            <Extension>
+              <X-Node>
+                <X-RegInfo mean="77.640522875817" stdDev="7.33199044839329"/>
+                <X-NodeStats improvement="0.0195979943148093"/>
+</X-Node>
+</Extension>
+            <CompoundPredicate booleanOperator="surrogate">
+              <CompoundPredicate booleanOperator="and">
+                <SimplePredicate field="Wzrost" operator="greaterThan" value="193.5"/>
+                <True/>
+</CompoundPredicate>
+              <True/>
+</CompoundPredicate>
+            <ScoreDistribution recordCount="0" value="0"/>
+            <ScoreDistribution recordCount="0" value="1"/>
+            <ScoreDistribution recordCount="0" value="2"/>
+            <ScoreDistribution recordCount="0" value="3"/>
+            <ScoreDistribution recordCount="4" value="4"/>
+            <ScoreDistribution recordCount="26" value="5"/>
+            <ScoreDistribution recordCount="28" value="6"/>
+            <ScoreDistribution recordCount="44" value="7"/>
+            <ScoreDistribution recordCount="28" value="8"/>
+            <ScoreDistribution recordCount="23" value="9"/>
+            <Node id="29" recordCount="64" score="77.171875">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="77.171875" stdDev="7.21012226631692"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <True/>
+                  <SimplePredicate field="Wzrost" operator="lessOrEqual" value="196.5"/>
+</CompoundPredicate>
+                <False/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="0" value="0"/>
+              <ScoreDistribution recordCount="0" value="1"/>
+              <ScoreDistribution recordCount="0" value="2"/>
+              <ScoreDistribution recordCount="0" value="3"/>
+              <ScoreDistribution recordCount="4" value="4"/>
+              <ScoreDistribution recordCount="7" value="5"/>
+              <ScoreDistribution recordCount="12" value="6"/>
+              <ScoreDistribution recordCount="20" value="7"/>
+              <ScoreDistribution recordCount="13" value="8"/>
+              <ScoreDistribution recordCount="8" value="9"/>
+</Node>
+            <Node id="30" recordCount="89" score="77.9775280898877">
+              <Extension>
+                <X-Node>
+                  <X-RegInfo mean="77.9775280898877" stdDev="7.44064013633256"/>
+</X-Node>
+</Extension>
+              <CompoundPredicate booleanOperator="surrogate">
+                <CompoundPredicate booleanOperator="and">
+                  <SimplePredicate field="Wzrost" operator="greaterThan" value="196.5"/>
+                  <True/>
+</CompoundPredicate>
+                <True/>
+</CompoundPredicate>
+              <ScoreDistribution recordCount="0" value="0"/>
+              <ScoreDistribution recordCount="0" value="1"/>
+              <ScoreDistribution recordCount="0" value="2"/>
+              <ScoreDistribution recordCount="0" value="3"/>
+              <ScoreDistribution recordCount="0" value="4"/>
+              <ScoreDistribution recordCount="19" value="5"/>
+              <ScoreDistribution recordCount="16" value="6"/>
+              <ScoreDistribution recordCount="24" value="7"/>
+              <ScoreDistribution recordCount="15" value="8"/>
+              <ScoreDistribution recordCount="15" value="9"/>
+</Node>
+</Node>
+</Node>
+</Node>
+</Node>
+    <Extension>
+      <X-TreeModel>
+        <X-PredictorImportanceList>
+          <X-PredictorImportance importance="100" predictorName="Wzrost"/>
+</X-PredictorImportanceList>
+</X-TreeModel>
+</Extension>
+</TreeModel>
+</PMML>
