@@ -31,11 +31,10 @@ Which is simple and works!<br>
 
 > PyPMML is a Python PMML scoring library, it really is the Python API for [PMML4S](https://github.com/autodeployai/pmml4s).
 
-### What is PMML4S?
+## What is PMML4S?
 ### [autodeployai/pmml4s](https://github.com/autodeployai/pmml4s)
 
 > PMML4S is a PMML (Predictive Model Markup Language) scoring library for Scala. It provides both Scala and Java Evaluator API for PMML.
-
 > PMML4S is a lightweight, clean and efficient implementation based on the PMML specification **from 2.0 through to the latest 4.4**.
 
 ## Example PyPmml code in Python.
