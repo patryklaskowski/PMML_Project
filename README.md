@@ -22,6 +22,10 @@ But there is no free license.<br>
 Which is simple and works!<br>
 **✅ ACCEPTED**
 
+#### Others:
+- [sklearn-pmml-model](https://github.com/iamDecode/sklearn-pmml-model) ❓
+- [pmml2sklearn](https://github.com/gokhangerdan/pmml2sklearn) ❓
+
 ---
 
 # 2. PyPmml
