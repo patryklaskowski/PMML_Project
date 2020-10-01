@@ -135,7 +135,7 @@ Below compare <u>all possible models that PMML supports</u> with <u>all models t
 - TimeSeriesModel
 - TreeModel
 
-<img src="pmml_models.png" alt="IMAGE ALT TEXT HERE" width="300" height="350" border="10" />
+<p align='center'><img src="pmml_models.png" alt="IMAGE ALT TEXT HERE" width="300" height="350" border="10" /></p>
 
 ---
 
@@ -154,7 +154,7 @@ SAS PROC PSCORE supports the following types of PMML models:
 - Naïve Bayes
 - Baseline models
 
-<img src="sas_14_3.png" alt="IMAGE ALT TEXT HERE" width="300" height="350" border="10" />
+<p align='center'><img src="sas_14_3.png" alt="IMAGE ALT TEXT HERE" width="300" height="350" border="10" /></p>
 
 ---
 
@@ -175,7 +175,7 @@ with following .pmml versions:
 - PMML 4.0 (EM 7.1)
 - PMML 4.1 (EM 12.3 and 13.1)
 
-<img src="SAS_dml.png" alt="IMAGE ALT TEXT HERE" width="700" height="650" border="1" />
+<p align='center'><img src="SAS_dml.png" alt="IMAGE ALT TEXT HERE" width="400" height="350" border="1" /></p>
 
 ---
 
