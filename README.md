@@ -7,20 +7,20 @@ patryk.laskowski@ibm.com
 #### A. [lightpmmlpredictor](https://github.com/ctrl-alt-d/lightpmmlpredictor)
 But supports only PMML-4_1,<br>
 and we have PMML-4_3.<br>
-**REJECTED**
+**❌ REJECTED**
 
 #### B. [Augustus - open-source PMML toolkit written in Python](http://augustusdocs.appspot.com/docs/v06/model_abstraction/augustus_and_pmml.html)
 [GitHub](https://github.com/modelop/augustus) page.<br>
 But can't setup.<br>
-**REJECTED**
+**❌ REJECTED**
 
 #### C. [openscoring-python](https://github.com/openscoring/openscoring-python)
 But there is no free license.<br>
-**REJECTED**
+**❌ REJECTED**
 
 #### D. [PyPmml](https://github.com/autodeployai/pypmml)
 Which is simple and works!<br>
-**ACCEPTED**
+**✅ ACCEPTED**
 
 ---
 
@@ -75,7 +75,7 @@ Data in DataFrame form is also accepted.
 
 # 3. Requirements for different model architectures
 
-#### NOTE
+#### Note
 In this case PMML models are going to be produced in SAS.<br>
 Below compare <u>all possible models that PMML supports</u> with <u>all models that SAS may export in PMML format</u> with <u>all models that PyPmml Python library supports</u>
 
@@ -177,6 +177,13 @@ with following .pmml versions:
 - PMML 4.1 (EM 12.3 and 13.1)
 
 <img src="SAS_dml.png" alt="IMAGE ALT TEXT HERE" width="700" height="650" border="1" />
+
+---
+
+# Summary
+
+PyPmml is a good solution that supports wide range of PMML versions and all desired models except Baseline Models.
+This seems to be a great choice for this project!
 
 ---
 
