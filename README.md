@@ -182,6 +182,53 @@ with following .pmml versions:
 <p align='center'><img src="SAS_dml.png" alt="IMAGE ALT TEXT HERE" width="400" height="350" border="1" /></p>
 
 ---
+# 3d. R-Pmml
+
+[Supported models website](https://softwareag.github.io/r-pmml/articles/packages_and_functions.html)
+[Main website](https://softwareag.github.io/r-pmml/index.html)
+
+> This package contains functions to **export** various machine learning and statistical models **to PMML**, as well as generate data transformations in PMML format.
+
+This is PMML reader for R.
+
+This package supports the following packages and model types:
+- Anomaly Detection
+     - isofor: iForest
+     - e1071: svm with “one-classification” type
+- Clustering
+     - amap: hclust
+     - neighbr: neighbr
+     - stats: kmeans
+- K Nearest Neighbors
+     - neighbr: neighbr
+- Linear Models
+     - glmnet: cv.glmnet with “gaussian” and “poisson” family types
+     - nnet: multinom
+     - stats: glm, lm without interaction terms
+- Naive Bayes
+     - e1071: naiveBayes
+- Neural Networks
+     - nnet: nnet
+- Support Vector Machines
+     - e1071: svm
+     - kernlab: ksvm with “rbfdot”, “polydot”, “vanilladot”, and “tanhdot” kernels
+- Time Series
+     - forecast: Arima
+- Tree-based Models and Ensembles
+     - ada: ada
+     - gbm: gbm with “bernoulli”, “poisson”, and “multinomial” distribution types
+     - randomForest: randomForest
+     - randomForestSRC (version 2.5.0): randomSurvivalForest
+     - rpart: rpart
+     - xgboost: xgb.Booster with “multi:softprob”, “multi:softmax”, and “binary:logistic” objectives
+- Other Packages
+     - arules: rules and itemsets
+     - survival: coxph
+
+
+<p align='center'><img src="r-pmml.png" alt="IMAGE ALT TEXT HERE" width="450" height="600" border="1" /></p>
+
+---
 
 # Summary
 
