@@ -91,26 +91,27 @@ Below compare <u>all possible models that PMML supports</u> with <u>all models t
         <td><a href="http://dmg.org/pmml/products.html"><b>SAS Enterprise Miner</b></a><br>[PMML Producer]</td>
         <td><a href="https://documentation.sas.com/?docsetId=emref&docsetTarget=n0jswh909h49dnn1mq562smtf4jz.htm&docsetVersion=14.3&locale=en#n0c3huzrgucufxn1vldp1sa3bkep"><b>SAS Enterprise Miner 14.3</b></a></td>
         <td><a href="https://github.com/autodeployai/pypmml"><b>PyPMML</b></a><br>[Python Library]</td>
+        <td><a href="https://softwareag.github.io/r-pmml/"><b>R-PMML</b></a><br>[R Library]</td>
     </thead>
-    <tr><td>1</td><td>AnomalyDetectionModel</td><td>-</td><td>-</td><td>✅ Anomaly Detection Models</td></tr>
-    <tr><td>2</td><td>AssociationModel</td><td>✅ Association Rules</td><td>-</td><td>✅ Association Rules</td></tr>
-    <tr><td>3</td><td>BayesianNetworkModel</td><td>-</td><td>-</td><td>❌ Bayesian Network</td></tr>
-    <tr><td>4</td><td>BaselineModel</td><td>-</td><td>✅ Baseline models<br>[???]</td><td>❌ Baseline Models</td></tr>
-    <tr><td>5</td><td>ClusteringModel</td><td>✅ Clustering</td><td>✅ Clustering models</td><td>✅ Cluster Models</td></tr>
-    <tr><td>6</td><td>GaussianProcessModel</td><td>-</td><td>-</td><td>❌ Gaussian Process</td></tr>
-    <tr><td>7</td><td>GeneralRegressionModel</td><td>-</td><td>-</td><td>✅ General Regression</td></tr>
+    <tr><td>1</td><td>AnomalyDetectionModel</td><td>-</td><td>-</td><td>✅ Anomaly Detection Models</td><td>✅ Anomaly Detection</td></tr>
+    <tr><td>2</td><td>AssociationModel</td><td>✅ Association Rules</td><td>-</td><td>✅ Association Rules</td><td>-</td></tr>
+    <tr><td>3</td><td>BayesianNetworkModel</td><td>-</td><td>-</td><td>❌ Bayesian Network</td><td>-</td></tr>
+    <tr><td>4</td><td>BaselineModel</td><td>-</td><td>✅ Baseline models<br>[???]</td><td>❌ Baseline Models</td><td>-</td></tr>
+    <tr><td>5</td><td>ClusteringModel</td><td>✅ Clustering</td><td>✅ Clustering models</td><td>✅ Cluster Models</td><td>✅ Clustering</td></tr>
+    <tr><td>6</td><td>GaussianProcessModel</td><td>-</td><td>-</td><td>❌ Gaussian Process</td><td>-</td></tr>
+    <tr><td>7</td><td>GeneralRegressionModel</td><td>-</td><td>-</td><td>✅ General Regression</td><td>-</td></tr>
     <tr><td>8</td><td>MiningModel</td><td>-</td><td>-</td><td>-</td></tr>
-    <tr><td>9</td><td>NaiveBayesModel</td><td>-</td><td>✅ Naïve Bayes<br>[Consumer]</td><td>✅ Naive Bayes</td></tr>
-    <tr><td>10</td><td>NearestNeighborModel</td><td>-</td><td>-</td><td>✅ k-Nearest Neighbors</td></tr>
-    <tr><td>11</td><td>NeuralNetwork</td><td>✅ Neural Networks</td><td>✅ Neural Networks</td><td>✅ Neural Network</td></tr>
-    <tr><td>12</td><td>RegressionModel</td><td>✅ Linear Regression<br>✅ Logistic Regression</td><td>✅ Regression</td><td>✅ Regression</td></tr>
-    <tr><td>13</td><td>RuleSetModel</td><td>-</td><td>-</td><td>✅ Ruleset</td></tr>
-    <tr><td>14</td><td>SequenceModel</td><td>-</td><td>-</td><td>❌ Sequences</td></tr>
-    <tr><td>15</td><td>Scorecard</td><td>-</td><td>✅ Scorecard<br>[Consumer]</td><td>✅ Scorecard</td></tr>
-    <tr><td>16</td><td>SupportVectorMachineModel</td><td>-</td><td>✅ Vector Machine<br>[Consumer]</td><td>✅ Vector Machine</td></tr>
-    <tr><td>17</td><td>TextModel</td><td>-</td><td>-</td><td>❌ Text Models</td></tr>
-    <tr><td>18</td><td>TimeSeriesModel</td><td>-</td><td>-</td><td>❌ Time Series</td></tr>
-    <tr><td>19</td><td>TreeModel</td><td>✅ Decision Trees</td><td>✅ Trees</td><td>✅ Trees</td></tr>
+    <tr><td>9</td><td>NaiveBayesModel</td><td>-</td><td>✅ Naïve Bayes<br>[Consumer]</td><td>✅ Naive Bayes</td><td>✅ Naive Bayes</td></tr>
+    <tr><td>10</td><td>NearestNeighborModel</td><td>-</td><td>-</td><td>✅ k-Nearest Neighbors</td><td>✅ K Nearest Neighbors</td></tr>
+    <tr><td>11</td><td>NeuralNetwork</td><td>✅ Neural Networks</td><td>✅ Neural Networks</td><td>✅ Neural Network</td><td>✅ Neural Networks</td></tr>
+    <tr><td>12</td><td>RegressionModel</td><td>✅ Linear Regression<br>✅ Logistic Regression</td><td>✅ Regression</td><td>✅ Regression</td><td>-</td></tr>
+    <tr><td>13</td><td>RuleSetModel</td><td>-</td><td>-</td><td>✅ Ruleset</td><td>-</td></tr>
+    <tr><td>14</td><td>SequenceModel</td><td>-</td><td>-</td><td>❌ Sequences</td><td>-</td></tr>
+    <tr><td>15</td><td>Scorecard</td><td>-</td><td>✅ Scorecard<br>[Consumer]</td><td>✅ Scorecard</td><td>-</td></tr>
+    <tr><td>16</td><td>SupportVectorMachineModel</td><td>-</td><td>✅ Vector Machine<br>[Consumer]</td><td>✅ Vector Machine</td><td>✅ Support Vector Machines</td></tr>
+    <tr><td>17</td><td>TextModel</td><td>-</td><td>-</td><td>❌ Text Models</td><td>-</td></tr>
+    <tr><td>18</td><td>TimeSeriesModel</td><td>-</td><td>-</td><td>❌ Time Series</td><td>✅ Time Series</td></tr>
+    <tr><td>19</td><td>TreeModel</td><td>✅ Decision Trees</td><td>✅ Trees</td><td>✅ Trees</td><td>✅ Tree-based Models</td></tr>
 </table>
 
 ---
