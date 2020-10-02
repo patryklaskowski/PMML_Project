@@ -139,7 +139,7 @@ Below compare all possible models that PMML supports with all models that SAS ma
 <table>
     <thead>
         <td>Idx</td>
-        <td><a href="http://dmg.org/pmml/v4-4-1/GeneralStructure.html"><b>PMML models</b></a></td>
+        <td><a href="http://dmg.org/pmml/v4-4-1/GeneralStructure.html"><b>All PMML models</b></a></td>
         <td><a href="http://dmg.org/pmml/products.html"><b>SAS Enterprise Miner</b></a><br><b>[PMML Producer]</b></td>
         <td><a href="https://documentation.sas.com/?docsetId=emref&docsetTarget=n0jswh909h49dnn1mq562smtf4jz.htm&docsetVersion=14.3&locale=en#n0c3huzrgucufxn1vldp1sa3bkep"><b>SAS Enterprise Miner 14.3</b></a><br>[PMML Consumer/Producer]</td>
         <td><a href="https://github.com/autodeployai/pypmml"><b>PyPMML</b></a><br>[Python Library]</td>
@@ -300,11 +300,9 @@ Below compare all possible models that PMML supports with all models that SAS ma
 
 ---
 
-# 3a. PMML models
+# 3a. All PMML models
 
-[Website](http://dmg.org/pmml/v4-4-1/GeneralStructure.html)
-
-All models that (according to documentation) are supported by PMML.
+[Documentation](http://dmg.org/pmml/v4-4-1/GeneralStructure.html) points these models as supported by PMML format.
 
 <p align='center'><img src="pmml_models.png" alt="IMAGE ALT TEXT HERE" width="300" height="350" border="10" /></p>
 
