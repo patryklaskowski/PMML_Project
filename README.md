@@ -6,35 +6,35 @@ patryk.laskowski@ibm.com
 
 # 1a. Python PMML supporting libraries
 
-### A. [lightpmmlpredictor](https://github.com/ctrl-alt-d/lightpmmlpredictor)
+## A. [lightpmmlpredictor](https://github.com/ctrl-alt-d/lightpmmlpredictor)
 But supports only PMML-4_1,<br>
 and we have PMML-4_3.<br>
 
 **❌ REJECTED**
 
-### B. [Augustus - open-source PMML toolkit written in Python](http://augustusdocs.appspot.com/docs/v06/model_abstraction/augustus_and_pmml.html)
+## B. [Augustus - open-source PMML toolkit written in Python](http://augustusdocs.appspot.com/docs/v06/model_abstraction/augustus_and_pmml.html)
 [GitHub](https://github.com/modelop/augustus) page.<br>
 But can't setup.<br>
 
 **❌ REJECTED**
 
-### C. [openscoring-python](https://github.com/openscoring/openscoring-python)
+## C. [openscoring-python](https://github.com/openscoring/openscoring-python)
 But there is no free license.<br>
 
 **❌ REJECTED**
 
-### D. [pmml2sklearn](https://github.com/gokhangerdan/pmml2sklearn)
+## D. [pmml2sklearn](https://github.com/gokhangerdan/pmml2sklearn)
 But parse pmml files and convert it to sklearn kmeans models.<br>
 
 **❌ REJECTED**
 
-### E. [sklearn-pmml-model](https://github.com/iamDecode/sklearn-pmml-model)
+## E. [sklearn-pmml-model](https://github.com/iamDecode/sklearn-pmml-model)
 But supports only few models (Decision Trees, Random Forests (ensemble method), Linear Model (specifically: Linear Reg, Ridge, Lasso, ElasticNet), Gaussian Naive Bayes)<br>
 Almost good...<br>
 
 **❌ REJECTED**
 
-### F. [PyPmml](https://github.com/autodeployai/pypmml)
+## F. [PyPmml](https://github.com/autodeployai/pypmml)
 Which is simple, supports almost all models on all PMML versions and works!<br>
 
 **✅ ACCEPTED**
@@ -45,7 +45,7 @@ Which is simple, supports almost all models on all PMML versions and works!<br>
 
 # 1b. R PMML supporting libraries
 
-### A. [r-pmml](https://softwareag.github.io/r-pmml/index.html)
+## A. [r-pmml](https://softwareag.github.io/r-pmml/index.html)
 
 [GitHub](https://github.com/SoftwareAG/r-pmml)
 [Supported models](https://softwareag.github.io/r-pmml/articles/packages_and_functions.html)<br>
@@ -56,7 +56,7 @@ But this is PMML **reader** for R language.
 
 **❌ REJECTED**
 
-### B. [r2pmml](https://github.com/jpmml/r2pmml)
+## B. [r2pmml](https://github.com/jpmml/r2pmml)
 
 R package for converting R models to PMML. Requires Java.
 
@@ -68,7 +68,7 @@ R package for converting R models to PMML. Requires Java.
 
 # 1c. Java PMML supporting libraries
 
-### A. [jpmml-evaluator](https://github.com/jpmml/jpmml-evaluator)
+## A. [jpmml-evaluator](https://github.com/jpmml/jpmml-evaluator)
 
 > Java Evaluator API for Predictive Model Markup Language (PMML)<br>
 
