@@ -94,7 +94,7 @@ Below compare <u>all possible models that PMML supports</u> with <u>all models t
         <td><a href="https://softwareag.github.io/r-pmml/"><b>R-PMML</b></a><br>[R Library]</td>
     </thead>
     <tr><td>1</td><td>AnomalyDetectionModel</td><td>-</td><td>-</td><td>✅ Anomaly Detection Models</td><td>✅ Anomaly Detection</td></tr>
-    <tr><td>2</td><td>AssociationModel</td><td>✅ Association Rules</td><td>-</td><td>✅ Association Rules</td><td>-</td></tr>
+    <tr><td>2</td><td>AssociationModel</td><td>✅ Association Rules</td><td>-</td><td>✅ Association Rules</td><td>✅ arules: rules and itemsets</td></tr>
     <tr><td>3</td><td>BayesianNetworkModel</td><td>-</td><td>-</td><td>❌ Bayesian Network</td><td>-</td></tr>
     <tr><td>4</td><td>BaselineModel</td><td>-</td><td>✅ Baseline models<br>[???]</td><td>❌ Baseline Models</td><td>-</td></tr>
     <tr><td>5</td><td>ClusteringModel</td><td>✅ Clustering</td><td>✅ Clustering models</td><td>✅ Cluster Models</td><td>✅ Clustering</td></tr>
