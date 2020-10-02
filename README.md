@@ -14,7 +14,7 @@ and we have PMML-4_3.<br>
 
 ## B. [Augustus - open-source PMML toolkit written in Python](http://augustusdocs.appspot.com/docs/v06/model_abstraction/augustus_and_pmml.html)
 [GitHub](https://github.com/modelop/augustus) page.<br>
-But can't setup.<br>
+But hard to setup.<br>
 
 **❌ REJECTED**
 
