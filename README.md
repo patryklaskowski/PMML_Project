@@ -6,39 +6,37 @@ patryk.laskowski@ibm.com
 
 # 1a. Python PMML supporting libraries
 
-#### A. [lightpmmlpredictor](https://github.com/ctrl-alt-d/lightpmmlpredictor)
+### A. [lightpmmlpredictor](https://github.com/ctrl-alt-d/lightpmmlpredictor)
 But supports only PMML-4_1,<br>
 and we have PMML-4_3.<br>
+
 **❌ REJECTED**
 
-#### B. [Augustus - open-source PMML toolkit written in Python](http://augustusdocs.appspot.com/docs/v06/model_abstraction/augustus_and_pmml.html)
+### B. [Augustus - open-source PMML toolkit written in Python](http://augustusdocs.appspot.com/docs/v06/model_abstraction/augustus_and_pmml.html)
 [GitHub](https://github.com/modelop/augustus) page.<br>
 But can't setup.<br>
+
 **❌ REJECTED**
 
-#### C. [openscoring-python](https://github.com/openscoring/openscoring-python)
+### C. [openscoring-python](https://github.com/openscoring/openscoring-python)
 But there is no free license.<br>
+
 **❌ REJECTED**
 
-#### D. [pmml2sklearn](https://github.com/gokhangerdan/pmml2sklearn)
-But parse pmml files and convert it to sklearn kmeans models.
+### D. [pmml2sklearn](https://github.com/gokhangerdan/pmml2sklearn)
+But parse pmml files and convert it to sklearn kmeans models.<br>
+
 **❌ REJECTED**
 
-#### E. [sklearn-pmml-model](https://github.com/iamDecode/sklearn-pmml-model)
-But supports only few models:
+### E. [sklearn-pmml-model](https://github.com/iamDecode/sklearn-pmml-model)
+But supports only few models (Decision Trees, Random Forests (ensemble method), Linear Model (specifically: Linear Reg, Ridge, Lasso, ElasticNet), Gaussian Naive Bayes)<br>
+Almost good...<br>
 
-     1. Decision Trees
-     2. Random Forests (ensemble method)
-     3. Linear Model (specifically: Linear Reg, Ridge, Lasso, ElasticNet)
-     4. Gaussian Naive Bayes
-
-Almost good...
-     
 **❌ REJECTED**
 
-
-#### F. [PyPmml](https://github.com/autodeployai/pypmml)
+### F. [PyPmml](https://github.com/autodeployai/pypmml)
 Which is simple, supports almost all models on all PMML versions and works!<br>
+
 **✅ ACCEPTED**
 
 ---
@@ -47,14 +45,20 @@ Which is simple, supports almost all models on all PMML versions and works!<br>
 
 # 1b. R PMML supporting libraries
 
-#### A. [r-pmml](https://softwareag.github.io/r-pmml/index.html)
+### A. [r-pmml](https://softwareag.github.io/r-pmml/index.html)
 
-[Supported models](https://softwareag.github.io/r-pmml/articles/packages_and_functions.html)
-
-Supports wide range of different model types (Anomaly Detection, Clustering, K Nearest Neighbors, Linear Models, etc.)
-
+[GitHub](https://github.com/SoftwareAG/r-pmml)
+[Supported models](https://softwareag.github.io/r-pmml/articles/packages_and_functions.html)<br>
+Supports wide range of different model types (Anomaly Detection, Clustering, K Nearest Neighbors, Linear Models, etc.)<br>
+<br>
 But this is PMML **reader** for R language.
-> This package contains functions to **export** various machine learning and statistical models **to PMML**, as well as generate data transformations in PMML format.
+> This package contains functions to **export** various machine learning and statistical models **to PMML**, as well as generate data transformations in PMML format.<br>
+
+**❌ REJECTED**
+
+### B. [r2pmml](https://github.com/jpmml/r2pmml)
+
+R package for converting R models to PMML. Requires Java.
 
 **❌ REJECTED**
 
@@ -64,12 +68,12 @@ But this is PMML **reader** for R language.
 
 # 1c. Java PMML supporting libraries
 
-#### A. [jpmml-evaluator](https://github.com/jpmml/jpmml-evaluator)
+### A. [jpmml-evaluator](https://github.com/jpmml/jpmml-evaluator)
 
-> Java Evaluator API for Predictive Model Markup Language (PMML)
+> Java Evaluator API for Predictive Model Markup Language (PMML)<br>
 
 Supported versions: PMML versions 3.0, 3.1, 3.2, 4.0, 4.1, 4.2, 4.3 and 4.4.<br>
-Wide range of models supported (Association rules, Cluster model, General regression, Naive Bayes, k-Nearest neighbors, Neural network, etc.)
+Wide range of models supported (Association rules, Cluster model, General regression, Naive Bayes, k-Nearest neighbors, Neural network, etc.)<br>
 
 **✅ ACCEPTED**
 
@@ -89,7 +93,7 @@ Wide range of models supported (Association rules, Cluster model, General regres
 > PMML4S is a PMML (Predictive Model Markup Language) scoring library for Scala. It provides both Scala and Java Evaluator API for PMML.
 > PMML4S is a lightweight, clean and efficient implementation based on the PMML specification **from 2.0 through to the latest 4.4**.
 
-## Example PyPmml code in Python.
+## Example PyPmml code.
 Below code load PMML decision tree model and make prediction.
 
 ```python
@@ -124,11 +128,11 @@ Data in Pandas `DataFrame` form is also accepted.
 
 ---
 
-# 3. Requirements for different model architectures
+# 3. Support for model types
 
 #### Note
 In this case PMML models are going to be produced in SAS.<br>
-Below compare <u>all possible models that PMML supports</u> with <u>all models that SAS may <b>export</b> in PMML format</u> with <u>all models that PyPmml Python library</u> as well as <u>JPmml</u> support.
+Below compare all possible models that PMML supports with all models that SAS may export in PMML format with all models that PyPmml Python library as well as JPmml support.
 
 --- 
 
@@ -302,90 +306,33 @@ Below compare <u>all possible models that PMML supports</u> with <u>all models t
 
 All models that (according to documentation) are supported by PMML.
 
-- AnomalyDetectionModel
-- AssociationModel
-- BayesianNetworkModel
-- BaselineModel
-- ClusteringModel
-- GaussianProcessModel
-- GeneralRegressionModel
-- MiningModel
-- NaiveBayesModel
-- NearestNeighborModel
-- NeuralNetwork
-- RegressionModel
-- RuleSetModel
-- SequenceModel
-- Scorecard
-- SupportVectorMachineModel
-- TextModel
-- TimeSeriesModel
-- TreeModel
-
 <p align='center'><img src="pmml_models.png" alt="IMAGE ALT TEXT HERE" width="300" height="350" border="10" /></p>
 
 ---
 
-# 3b. SAS Enterprise Miner 14.3 PMML Support
+# 3b. SAS Enterprise Miner
 
-[Website.](https://documentation.sas.com/?docsetId=emref&docsetTarget=n0jswh909h49dnn1mq562smtf4jz.htm&docsetVersion=14.3&locale=en#n0c3huzrgucufxn1vldp1sa3bkep) Look for "Supported PMML Models".
+According to [this](http://dmg.org/pmml/products.html) website **SAS Enterprise Miner can produce** this models:
 
-
-#### Supported PMML Models
-SAS PROC PSCORE supports the following types of PMML models:
-- Regression
-- Trees
-- Neural Networks
-- Clustering models
-- Scorecard
-- Vector Machine
-- Naïve Bayes
-- Baseline models
-
-This means that SAS in general is able to handle either **import or export** of above.
-
-<p align='center'><img src="sas_14_3.png" alt="IMAGE ALT TEXT HERE" width="300" height="350" border="10" /></p>
+<p align='center'><img src="SAS_dml.png" alt="IMAGE ALT TEXT HERE" width="450" height="400" border="1" /></p>
 
 ---
 
+# 3c. SAS Enterprise Miner 14.3 PMML Support
 
-# 3c. SAS Enterprise Miner
+[Website.](https://documentation.sas.com/?docsetId=emref&docsetTarget=n0jswh909h49dnn1mq562smtf4jz.htm&docsetVersion=14.3&locale=en#n0c3huzrgucufxn1vldp1sa3bkep) Look for "Supported PMML Models".
 
-According to [this](http://dmg.org/pmml/products.html) website **SAS Enterprise Miner can produce** this models:
-- Linear Regression
-- Logistic Regression
-- Trees
-- Neural Networks
-- Clustering
-- Association Rules
+SAS PROC PSCORE supports the following types of PMML models:
 
-with following .pmml versions: 
-- PMML 2.1 (EM 5.1)
-- PMML 3.1 (EM 5.3)
-- PMML 4.0 (EM 7.1)
-- PMML 4.1 (EM 12.3 and 13.1)
+<p align='center'><img src="sas_14_3.png" alt="IMAGE ALT TEXT HERE" width="300" height="350" border="10" /></p>
 
-<p align='center'><img src="SAS_dml.png" alt="IMAGE ALT TEXT HERE" width="400" height="350" border="1" /></p>
+This means that SAS in general is able to handle either **import or export** of above.
 
 ---
 
 # 3d. Python PyPmml 
 
-It supports the following models:
-
-- Anomaly Detection Models
-- Association Rules
-- Cluster Models
-- General Regression
-- k-Nearest Neighbors
-- Naive Bayes
-- Neural Network
-- Regression
-- Ruleset
-- Scorecard
-- Trees
-- Vector Machine
-- Multiple Models
+Supports following models:
 
 <p align='center'><img src="pypmml.png" alt="IMAGE ALT TEXT HERE" width="400" height="350" border="1" /></p>
 
@@ -393,19 +340,7 @@ It supports the following models:
 
 # 3e. Java jpmml-evaluator
 
-Model evaluation:
-- Association rules
-- Cluster model
-- General regression
-- Naive Bayes
-- k-Nearest neighbors
-- Neural network
-- Regression
-- Rule set
-- Scorecard
-- Support Vector Machine
-- Tree model
-- Ensemble model
+Evaluate: 
 
 <p align='center'><img src="jpmml.png" alt="IMAGE ALT TEXT HERE" width="300" height="350" border="10" /></p>
 
