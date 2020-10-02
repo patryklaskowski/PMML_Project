@@ -58,7 +58,7 @@ But this is PMML **reader** for R language.
 
 ## B. [r2pmml](https://github.com/jpmml/r2pmml)
 
-R package for converting R models to PMML. Requires Java.
+R package for **converting R models to PMML**. Requires Java.
 
 **❌ REJECTED**
 
